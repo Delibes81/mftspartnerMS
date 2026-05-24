@@ -7,15 +7,15 @@ import GlassCard from "@/components/GlassCard";
 import TeamSpecialties from "@/components/TeamSpecialties";
 import CompanyTimeline from "@/components/CompanyTimeline";
 import { motion } from "framer-motion";
-import { 
-  Users, 
-  Target, 
-  Eye, 
-  Handshake, 
-  ShieldCheck, 
-  Lightbulb, 
-  Trophy, 
-  Check 
+import {
+  Users,
+  Target,
+  Eye,
+  Handshake,
+  ShieldCheck,
+  Lightbulb,
+  Trophy,
+  Check
 } from "@phosphor-icons/react";
 import Link from "next/link";
 
@@ -55,11 +55,11 @@ export default function NosotrosPage() {
     <>
       <Navbar />
       <main className="flex-grow pt-24 pb-20 bg-zinc-50/50">
-        
+
         {/* Quiénes Somos Section */}
         <section className="py-16 md:py-24 max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Left Content Column */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -70,15 +70,15 @@ export default function NosotrosPage() {
               <span className="text-xs font-semibold uppercase tracking-widest text-tech-blue bg-tech-blue-light/50 px-4 py-1.5 rounded-full inline-block">
                 Nuestra Identidad
               </span>
-              
+
               <h1 className="text-4xl sm:text-5xl font-extrabold text-zinc-950 tracking-tight leading-tight">
                 Mat Fleet Tech Services (MFTS)
               </h1>
-              
+
               <p className="text-lg text-zinc-600 leading-relaxed font-light">
                 Somos una compañía líder de servicios de tecnología integrales, comprometida con la modernización, estabilidad y seguridad de la infraestructura tecnológica de nuestros clientes.
               </p>
-              
+
               <div className="space-y-4 text-zinc-500 text-sm leading-relaxed">
                 <p>
                   Fundada con la convicción de que la tecnología debe ser un catalizador y no un obstáculo, en MFTS nos especializamos en brindar soporte técnico profesional, diseño de redes corporativas, consultoría en la nube y optimización de flujos de trabajo empresariales.
@@ -113,7 +113,7 @@ export default function NosotrosPage() {
             >
               <div className="relative w-full max-w-md aspect-square rounded-[2rem] bg-white border border-zinc-200/70 p-8 flex flex-col justify-between shadow-premium overflow-hidden group hover:shadow-premium-hover hover:border-zinc-300 transition-all duration-300 animate-tech-float">
                 <div className="absolute right-0 bottom-0 translate-x-12 translate-y-12 w-80 h-80 rounded-full bg-tech-blue/5 blur-3xl group-hover:scale-110 transition-transform duration-500" />
-                
+
                 <div className="flex justify-between items-start">
                   <div className="w-14 h-14 rounded-2xl bg-tech-blue-light text-tech-blue flex items-center justify-center shadow-sm border border-zinc-100">
                     <Users size={28} weight="duotone" />
@@ -156,7 +156,7 @@ export default function NosotrosPage() {
         <section className="bg-zinc-100/50 border-y border-zinc-200/40 py-20">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-              
+
               {/* Misión */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
@@ -199,7 +199,7 @@ export default function NosotrosPage() {
                       Nuestra Visión
                     </h3>
                     <p className="text-zinc-600 text-sm leading-relaxed">
-                      Consolidarnos para el año 2028 como el referente número uno de consultoría, servicios y licenciamiento de TI a nivel regional, reconocidos por nuestra excelencia en servicio, innovación constante en soluciones en la nube e integridad en todas nuestras relaciones de negocio.
+                      Consolidarnos como el referente de consultoría, servicios y licenciamiento de TI a nivel nacional, reconocidos por nuestra excelencia en servicio, innovación constante en soluciones en la nube e integridad en todas nuestras relaciones de negocio.
                     </p>
                   </div>
                   <div className="pt-6 border-t border-zinc-150/80 mt-6 flex items-center gap-2 text-xs text-indigo-500 font-semibold uppercase tracking-wider">

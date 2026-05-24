@@ -2,17 +2,17 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  ShieldCheck, 
-  MapPin, 
-  CloudArrowUp, 
+import {
+  ShieldCheck,
+  MapPin,
+  CloudArrowUp,
   Sparkle
 } from "@phosphor-icons/react";
 import GlassCard from "./GlassCard";
 
 const timelineEvents = [
   {
-    year: "2016",
+    year: "2010",
     title: "Fundación de MFTS",
     description: "Iniciamos operaciones en la región con la visión de profesionalizar el soporte técnico corporativo, concentrándonos en reparaciones críticas e instalaciones de oficina.",
     icon: ShieldCheck,
@@ -21,7 +21,7 @@ const timelineEvents = [
     glow: "shadow-[0_0_15px_rgba(59,130,246,0.15)]"
   },
   {
-    year: "2019",
+    year: "2015",
     title: "Consolidación e Infraestructura",
     description: "Expandimos nuestro catálogo técnico de servicios integrales agregando cableado estructurado categoría 6/6A, fibra óptica y sistemas de CCTV IP avanzados.",
     icon: MapPin,
@@ -75,9 +75,9 @@ const itemVariants = {
 export default function CompanyTimeline() {
   return (
     <section className="py-20 bg-zinc-50 relative overflow-hidden border-t border-zinc-200/40">
-      
+
       <div className="max-w-7xl mx-auto px-6">
-        
+
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-tech-blue bg-tech-blue-light/50 px-4 py-1.5 rounded-full inline-block">
@@ -104,20 +104,20 @@ export default function CompanyTimeline() {
 
           {timelineEvents.map((event, idx) => {
             const Icon = event.icon;
-            
+
             return (
-              <motion.div 
-                key={idx} 
+              <motion.div
+                key={idx}
                 variants={itemVariants}
                 className="relative z-10 flex flex-col items-center md:items-start group"
               >
-                
+
                 {/* Year Indicator Node */}
                 <div className="flex flex-col items-center md:items-start mb-6 w-full relative">
                   <div className={`w-14 h-14 rounded-full ${event.bgColor} ${event.color} ${event.glow} border border-zinc-200/60 flex items-center justify-center relative transition-transform duration-300 group-hover:scale-110 z-10`}>
                     <Icon size={24} weight="duotone" />
                   </div>
-                  
+
                   {/* Floating Year badge below/beside node */}
                   <span className="block text-2xl font-black text-zinc-950 font-mono tracking-tight mt-4">
                     {event.year}
