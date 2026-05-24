@@ -61,17 +61,23 @@ export default function Footer() {
           </h4>
           <ul className="space-y-3.5 text-sm">
             <li className="flex items-center gap-2.5">
-              <Phone size={16} className="text-zinc-400" />
-              <span className="text-zinc-500">Soporte y Ventas</span>
-            </li>
-            <li className="flex items-center gap-2.5">
               <Envelope size={16} className="text-zinc-400" />
-              <span className="text-zinc-500">info@mfts.com.mx</span>
+              <span className="text-zinc-500">cdc@mattechservices.mx</span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <Phone size={16} className="text-zinc-400 mt-0.5" />
+              <div className="flex flex-col text-zinc-500 leading-tight">
+                <span>Tel: 5589852173</span>
+                <span>Tel: 5589852174</span>
+              </div>
             </li>
             <li className="flex items-start gap-2.5">
               <MapPin size={16} className="text-zinc-400 mt-0.5" />
               <span className="text-zinc-500 leading-snug">
-                CDMX y Área Metropolitana
+                Providencia #821<br/>
+                Col. Del valle<br/>
+                Ciudad de México, CDMX<br/>
+                CP. 03100
               </span>
             </li>
           </ul>

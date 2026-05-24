@@ -66,10 +66,11 @@ export default function ContactoPage() {
                   <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider font-mono">
                     Teléfono & Soporte
                   </h4>
-                  <p className="text-sm font-semibold text-zinc-800">
-                    +56 9 3200 4567
+                  <p className="text-sm font-semibold text-zinc-800 flex flex-col gap-0.5">
+                    <span>55 8985 2173</span>
+                    <span>55 8985 2174</span>
                   </p>
-                  <p className="text-[11px] text-zinc-500 leading-normal">
+                  <p className="text-[11px] text-zinc-500 leading-normal mt-1">
                     Línea directa para atención comercial y reportes técnicos urgentes.
                   </p>
                 </div>
@@ -85,7 +86,7 @@ export default function ContactoPage() {
                     Ventas y Cotizaciones
                   </h4>
                   <p className="text-sm font-semibold text-zinc-800">
-                    contacto@mfts.cl
+                    cdc@mattechservices.mx
                   </p>
                   <p className="text-[11px] text-zinc-500 leading-normal">
                     Escríbenos y un ejecutivo comercial te responderá con una propuesta.
@@ -103,10 +104,12 @@ export default function ContactoPage() {
                     Ubicación y Cobertura
                   </h4>
                   <p className="text-sm font-semibold text-zinc-800">
-                    Santiago, Chile
+                    Providencia #821, Col. Del valle<br/>
+                    Ciudad de México, CDMX<br/>
+                    CP. 03100
                   </p>
-                  <p className="text-[11px] text-zinc-500 leading-normal">
-                    Soporte presencial en toda la RM y soporte remoto a nivel nacional/global.
+                  <p className="text-[11px] text-zinc-500 leading-normal mt-1">
+                    Soporte presencial en toda la CDMX y soporte remoto a nivel nacional/global.
                   </p>
                 </div>
               </GlassCard>

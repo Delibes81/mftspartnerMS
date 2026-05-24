@@ -107,25 +107,28 @@ export default function ContactExtensions() {
 
             {/* Quick WhatsApp contact banner */}
             <div className="mt-8">
-              <GlassCard className="p-6 bg-gradient-to-r from-emerald-500/5 to-teal-500/5 border-emerald-500/20 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl">
-                <div className="flex items-center gap-4 text-left w-full">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center flex-shrink-0 shadow-md shadow-emerald-500/10">
+              <div className="p-6 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl relative overflow-hidden">
+                <div className="absolute right-0 top-0 w-32 h-32 bg-emerald-500/10 blur-2xl rounded-full pointer-events-none" />
+                <div className="flex flex-row items-center gap-4 text-left w-full sm:w-auto relative z-10">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center flex-shrink-0 shadow-md shadow-emerald-500/20">
                     <WhatsappLogo size={26} weight="fill" />
                   </div>
-                  <div className="min-w-0 flex-1">
-                    <h4 className="text-sm font-bold text-zinc-800 leading-tight">¿Prefieres chatear de inmediato?</h4>
-                    <p className="text-xs text-zinc-500 mt-1">Conéctate directamente con nuestro coordinador técnico por WhatsApp.</p>
+                  <div className="flex-1">
+                    <h4 className="text-base font-bold text-zinc-900 leading-tight">¿Prefieres chatear de inmediato?</h4>
+                    <p className="text-sm text-zinc-600 mt-1">Conéctate directamente con nuestro coordinador técnico por WhatsApp.</p>
                   </div>
                 </div>
-                <a
-                  href="https://wa.me/56932004567?text=Hola,%20me%20gustar%C3%ADa%20agendar%20un%20diagn%C3%B3stico%20de%20TI%20con%20MFTS."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-semibold shadow-sm hover:shadow transition-all hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  <span>Chat en WhatsApp</span>
-                </a>
-              </GlassCard>
+                <div className="w-full sm:w-auto flex-shrink-0 relative z-10">
+                  <a
+                    href="https://wa.me/525589852173?text=Hola,%20me%20gustar%C3%ADa%20agendar%20un%20diagn%C3%B3stico%20de%20TI%20con%20MFTS."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-bold shadow-sm hover:shadow transition-all hover:-translate-y-0.5"
+                  >
+                    <span>Chat en WhatsApp</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
