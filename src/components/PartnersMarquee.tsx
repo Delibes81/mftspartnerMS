@@ -25,8 +25,6 @@ const brands = [
 ];
 
 export default function PartnersMarquee() {
-  // Double the array to make the infinite scroll smooth and seamless
-  const doubleBrands = [...brands, ...brands];
 
   return (
     <section className="py-10 bg-white border-y border-zinc-200/50 overflow-hidden relative">
@@ -42,30 +40,38 @@ export default function PartnersMarquee() {
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
         {/* Marquee track */}
-        <div className="flex w-max overflow-hidden">
+        <div className="flex overflow-hidden">
           <motion.div
-            className="flex gap-16 items-center px-4"
+            className="flex w-max"
             animate={{ x: ["0%", "-50%"] }}
             transition={{
               ease: "linear",
-              duration: 30,
+              duration: 150, // Aumentado significativamente para que vaya más lento
               repeat: Infinity,
             }}
           >
-            {doubleBrands.map((brand, index) => {
-              const Icon = brand.icon;
-              return (
-                <div
-                  key={index}
-                  className="flex items-center gap-3 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-default py-2"
-                >
-                  <Icon size={24} className={brand.color} weight="fill" />
-                  <span className="text-sm font-bold tracking-tight text-zinc-800">
-                    {brand.name}
-                  </span>
-                </div>
-              );
-            })}
+            {[0, 1].map((halfIndex) => (
+              <div key={halfIndex} className="flex">
+                {[0, 1, 2, 3].map((repeatIndex) => (
+                  <div key={repeatIndex} className="flex gap-16 items-center pr-16 w-max">
+                    {brands.map((brand, index) => {
+                      const Icon = brand.icon;
+                      return (
+                        <div
+                          key={index}
+                          className="flex items-center gap-3 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-default py-2"
+                        >
+                          <Icon size={24} className={brand.color} weight="fill" />
+                          <span className="text-sm font-bold tracking-tight text-zinc-800">
+                            {brand.name}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                ))}
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>
